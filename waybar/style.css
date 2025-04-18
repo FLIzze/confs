@@ -1,0 +1,148 @@
+* {
+        padding: 0;
+        margin: 0;
+        border: none;
+        border-radius: 0;
+        min-height: 0;
+        font-family: "JetBrainsMono Nerd Font Propo", sans-serif;
+        font-size: 16px;
+        text-shadow: none;
+        box-shadow: none;
+}
+
+window#waybar {
+        background: #45353f;
+        color: #fce6e4;
+}
+
+window#tooltip {
+        color: #45353f;
+        background: #fce6e4;
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+        padding: 0 5px;
+}
+
+#workspaces button {
+        background: #45353f;
+        color: #fce6e4;
+        padding: 0 8px;
+        border-bottom: 4px;
+        border-style: solid;
+        border-color: #755f78;
+}
+
+#workspaces button.active {
+        background: #705DAB;
+        color: #fbf1c7;
+        border-color: #fbf1c7;
+}
+
+#workspaces button.urgent {
+        background: #BF616A;
+        color: #fbf1c7;
+}
+
+#window {
+        background: #45353f;
+        color: #fce6e4;
+        padding: 0 10px;
+        font-weight: bold;
+}
+
+#pulseaudio {
+        background: #3C276E;
+        color: #fbf1c7;
+        padding: 0 10px;
+}
+
+#pulseaudio.muted {
+        background: #ea6962;
+        color: #fbf1c7;
+}
+
+#battery {
+        background: #45353f;
+        color: #fbf1c7;
+        padding: 0 10px;
+}
+
+#battery.critical {
+        background: #cc241d;
+        color: #fbf1c7;
+}
+
+#battery.warning {
+        background: #e78a4e;
+        color: #fbf1c7;
+}
+
+#battery.charging {
+        background: #74887d;
+        color: #fbf1c7;
+}
+
+#clock {
+        background: #A46356;
+        color: #fce6e4;
+        font-weight: bold;
+}
+
+#clock.date {
+        padding-left: 10px;
+}
+
+#clock.time {
+        padding-left: 5px;
+        padding-right: 10px;
+}
+
+#network {
+        background: #705DAB;
+        color: #fce6e4;
+        padding: 0 10px;
+}
+
+#custom-player {
+        background: #74887d;
+        color: #fce6e4;
+        padding-left: 10px;
+        padding-right: 10px;
+}
+
+#bluetooth {
+        background: #703BBB;
+        color: #fce6e4;
+        padding-left: 10px;
+        padding-right: 10px;
+}
+
+#custom-bluetooth_battery {
+        background: #703BBB;
+        color: #fce6e4;
+        padding-right: 10px;
+}
+
+#custom-power-menu {
+        padding-left: 10px;
+        padding-right: 10px;
+}
+
+#custom-brightness {
+    background: #d8a657; 
+    color: #fce6e4;
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+window#waybar {
+        padding: 0;
+}
+
+.modules-left, .modules-center, .modules-right {
+        margin: 0;
+        padding: 0;
+}

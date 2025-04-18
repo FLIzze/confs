@@ -1,0 +1,150 @@
+{
+        "layer": "top",
+        "position": "top",
+        "height": 35,
+
+        "modules-left": [
+                "hyprland/workspaces",
+                "custom/player",
+        ],
+
+        "modules-right": [
+                "battery#bat0",
+                "battery#bat1",
+                "bluetooth",
+                "network",
+                "custom/brightness",
+                "pulseaudio",
+                "clock#date",
+                "clock#time",
+                "custom/power-menu",
+        ],
+
+        "custom/power-menu": {
+                "format": "⏻",
+                "on-click": "~/.config/waybar/scripts/power-menu.sh",
+                "tooltip": false
+        },
+
+        "battery#bat0": {
+                "bat": "BAT0",
+                "interval": 1,
+                "states": {
+                        "warning": 20,
+                        "critical": 15
+                },
+                "format": "{icon} {capacity}%",
+                "format-charging": " {capacity}%",
+                "format-plugged": " {capacity}%",
+                "format-alt": "{icon} {time}",
+                "tooltip": "Battery 0: {capacity}% - {time-to-full} remaining",
+                "tooltip-discharge": "Battery 0: {capacity}% - {time-to-empty} remaining",  
+                "format-icons": ["", "", "", "", ""],
+                "tooltip": true
+        },
+        "battery#bat1": {
+                "bat": "BAT1",
+                "interval": 1,
+                "states": {
+                        "warning": 20,
+                        "critical": 15
+                },
+                "format": "{icon} {capacity}%",
+                "format-charging": " {capacity}%",
+                "format-plugged": " {capacity}%",
+                "format-alt": "{icon} {time}",
+                "tooltip": "Battery 1: {capacity}% - {time-to-full} remaining",
+                "tooltip-discharge": "Battery 0: {capacity}% - {time-to-empty} remaining",  
+                "format-icons": ["", "", "", "", ""],
+                "tooltip": true
+        },
+
+        "hyprland/workspaces": {
+                "format": "{icon}",
+                "on-click": "activate"
+        },
+
+        "pulseaudio": {
+                "format": "<span color='#fbf1c7'> </span>{volume}%",
+                "format-muted": "<span color='#fbf1c7'> </span>{volume}%",
+                "tooltip": false,
+                "max-volume": 120
+        },
+
+        "battery": {
+                "interval": 30,
+                "states": {
+                        "good": 99,
+                        "warning": 30,
+                        "critical": 20
+                },
+                "format-icons": [" "," "," "," "," "],
+                "format": "{icon} {capacity}%",
+                "format-charging": "<span color='#fce6e4' > </span>{capacity}%",
+                "format-charging-warning": "<span color='#d8a657' > </span>{capacity}%",
+                "format-charging-critical": "<span color='#cc241d' > </span>{capacity}%",
+                "format-plugged": " {capacity}%",
+                "tooltip": false
+        },
+
+        "clock#date": {
+                "format": "<span color='#fce6e4' >󰃭 </span>{:%a %d %b}",
+                "min-length": 8,
+                "max-length": 20,
+                "tooltip": false
+        },
+
+        "clock#time": {
+                "format": "<span color='#cc241d' ></span>{:%I:%M %p}",
+                "tooltip": false,
+                "tooltip-format": "Standard Time: {:%I:%M %p}",
+                "min-length": 8,
+                "max-length": 12
+        },
+
+        "custom/player": {
+                "exec": "~/.config/waybar/scripts/player.sh",
+                "format": "{}",
+                "interval": 1,
+                "max-length": 35,
+                "tooltip": false,
+                "on-click-right": "playerctl next",
+                "on-click-left": "playerctl previous",
+                "on-click": "playerctl play-pause"
+        },
+
+        "network": {
+                "format-wifi": "<span size='13000' foreground='#f5e0dc'> </span>{essid}",
+                "format-ethernet": "<span size='13000' foreground='#f5e0dc'>󰤭 </span> Disconnected",
+                "format-linked": "{ifname} (No IP) ",
+                "format-disconnected": "<span size='13000' foreground='#f5e0dc'> </span>Disconnected",
+                "tooltip-format-wifi": "Signal Strength: {signalStrength}%"
+        },
+
+        "custom/brightness": {
+                "exec": "~/.config/waybar/scripts/brightness.sh",
+                "interval": 2,
+                "tooltip": false
+        },
+
+        "bluetooth": {
+                "format-on": "󰂯",
+                "format-off": "󰂲",
+                "format-disabled": "", 
+                "format-connected": "󰂱 {num_connections}",
+                "tooltip": false
+        },
+
+        "custom/reboot": {
+                "format": "󰜉",
+                "tooltip": false,
+                "on-click": "systemctl reboot",
+                "on-click-right": "systemctl reboot --firmware-setup"
+        },
+
+        "custom/shutdown": {
+                "format": "󰐥",
+                "tooltip": false,
+                "on-click": "shutdown now"
+        }
+}
