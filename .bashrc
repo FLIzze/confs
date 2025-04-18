@@ -63,7 +63,7 @@ function smile_prompt
                 git_display=""
         fi
 
-        PS1="${BYELLOW}[${WHITE}\w${BYELLOW}]${BWHITE} ${git_display}${SC}${DF} ${BYELLOW}\$${DF} "
+        PS1="${BYELLOW}[${WHITE}\w${BYELLOW}]${BWHITE} ${git_display}${SC}${DF} ${BYELLOW}\$${DF} \[\e[0m\]"
 }
 
 eval "$(pyenv init -)"
