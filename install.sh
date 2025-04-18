@@ -26,11 +26,11 @@ link_file() {
         fi
 }
 
-link_file "$(pwd)/waybar" "$HOME/.config/waybar"
-link_file "$(pwd)/hypr" "$HOME/.config/hypr"
-link_file "$(pwd)/nvim" "$HOME/.config/nvim"
-link_file "$(pwd)/.tmux.conf" "$HOME/.tmux.conf"
-link_file "$(pwd)/.bashrc" "$HOME/.bashrc"
-link_file "$(pwd)/.bash_aliases" "$HOME/.bash_aliases"
+link_file "$(pwd)/waybar" "$HOME/.config/"
+link_file "$(pwd)/hypr" "$HOME/.config/"
+link_file "$(pwd)/nvim" "$HOME/.config/"
+link_file "$(pwd)/.tmux.conf" "$HOME/"
+link_file "$(pwd)/.bashrc" "$HOME/"
+link_file "$(pwd)/.bash_aliases" "$HOME/"
 
 echo -e "${CYAN}Done.${NC}"
