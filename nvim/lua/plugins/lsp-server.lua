@@ -16,6 +16,7 @@ return {
         },
         config = function()
             local lsp = require('lsp-zero')
+            local lspconfig = require("lspconfig") lspconfig["ts_ls"].setup({})
 
             -- Configure Mason
             require('mason').setup()
@@ -23,7 +24,7 @@ return {
             -- Configure Mason LSPConfig
             require('mason-lspconfig').setup({
                 ensure_installed = {
-                    'html', 'htmx', 'cssls', 'pyright', 
+                    'html', 'cssls', 'pyright', 
                     'ts_ls', 'gopls', 'eslint', 'tailwindcss', 
                 },
             })
