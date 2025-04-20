@@ -9,11 +9,7 @@
         ],
 
         "modules-right": [
-                "battery#bat0",
-                "battery#bat1",
-                "bluetooth",
                 "network",
-                "custom/brightness",
                 "pulseaudio",
                 "clock#date",
                 "clock#time",
