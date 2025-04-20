@@ -1,0 +1,60 @@
+* {
+    background:     #45353f;
+    background-alt: #50465a;
+    foreground:     #fce6e4;
+    selected:       #705DAB;
+    urgent:         #BF616A;
+}
+
+window {
+    location: center;
+    anchor: center;
+    width: 400px;
+    background-color: @background;
+    padding: 2px;
+}
+
+inputbar {
+    enabled: false;
+    margin: 0;
+    padding: 0;
+    height: 0px;
+    background-color: transparent;
+}
+
+listview {
+    columns: 4;
+    lines: 1;
+    spacing: 0px;
+    background-color: @background;
+}
+
+element {
+    orientation: vertical;
+    padding: 15px;
+    background-color: @background-alt;
+    cursor: pointer;
+}
+
+element selected {
+    background-color: @selected;
+}
+
+element-icon {
+    size: 48px;
+    background-color: transparent;
+}
+
+element-text {
+    text-color: @foreground;
+    background-color: transparent;
+    margin: 5px 0 0 0;
+    padding: 0;
+    horizontal-align: 0.5;
+    vertical-align: 0.0;
+    font: "IosevkaTerm Nerd Font 11";
+}
+
+element normal.urgent, element selected.urgent {
+    background-color: @urgent;
+}
