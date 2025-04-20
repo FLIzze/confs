@@ -29,7 +29,7 @@ link_file() {
 link_file "$(pwd)/waybar" "$HOME/.config/"
 link_file "$(pwd)/hypr" "$HOME/.config/"
 link_file "$(pwd)/nvim" "$HOME/.config/"
-link_file "$(pwd)/.kanata.kbd" "$HOME/.config"
+link_file "$(pwd)/.kanata.kbd" "$HOME/.config/"
 link_file "$(pwd)/alacritty" "$HOME/"
 link_file "$(pwd)/.tmux.conf" "$HOME/"
 link_file "$(pwd)/.bashrc" "$HOME/"
