@@ -1,14 +1,11 @@
 #!/bin/bash
 
-# Make sure this runs with full environment
-export PATH="$HOME/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:$PATH"
-
 pkill -x rofi || true
 
-power_icon="../../img/power.png"
-restart_icon="../../img/restart.png"
-logout_icon="../../img/logout.png"
-sleep_icon="../../img/sleep.png"
+power_icon="$HOME/confs/img/power.png"
+restart_icon="$HOME/confs/img/restart.png"
+logout_icon="$HOME/confs/img/logout.png"
+sleep_icon="$HOME/confs/img/sleep.png"
 
 rofi_menu() {
     echo -en "Power\0icon\x1f$power_icon\n"
@@ -17,7 +14,6 @@ rofi_menu() {
     echo -en "Sleep\0icon\x1f$sleep_icon\n"
 }
 
-# Use full path to rofi
 CHOICE=$(rofi_menu | /usr/bin/rofi -dmenu -theme power-menu.rasi -show-icons)
 
 case "$CHOICE" in
