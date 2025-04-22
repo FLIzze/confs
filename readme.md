@@ -1,7 +1,6 @@
-checkout branch
-        - laptop
-        - [laptop](https://github.com/FLIzze/confs/tree/laptop)
-        - [desktop](https://github.com/FLIzze/confs/tree/desktop)
+for
+- [laptop](https://github.com/FLIzze/confs/tree/laptop)
+- [desktop](https://github.com/FLIzze/confs/tree/desktop)
 
 ```
 git clone https://github.com/FLIzze/confs.git
