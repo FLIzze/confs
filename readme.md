@@ -12,5 +12,5 @@ chmod +x install.sh
 ### Dependencies needed 
 
 ```
-yay -S hyprland hyprlock hypridle hyprshot waybar rofi alacritty tmux neovim pipewire pipewire-pulse wireplumber xdg-desktop-portal xdg-desktop-portal-gtk
+yay -S hyprland hyprlock hypridle hyprshot waybar rofi alacritty tmux neovim pipewire pipewire-pulse wireplumber xdg-desktop-portal xdg-desktop-portal-gtk dolphin
 ```
