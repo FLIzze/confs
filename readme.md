@@ -1,3 +1,5 @@
+### All my confs
+
 ```
 git clone https://github.com/FLIzze/confs.git
 cd confs
