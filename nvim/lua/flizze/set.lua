@@ -12,3 +12,8 @@ vim.opt.smartindent = true
 vim.opt.swapfile = false
 
 vim.opt.scrolloff = 8
+
+vim.opt.wrap = true
+vim.opt.linebreak = true
+vim.opt.showbreak = '↪ '
+vim.opt.breakindent = true
