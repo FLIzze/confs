@@ -56,16 +56,13 @@ return {
                 },
             })
 
-            -- Set up LSP on_attach function
             lsp.on_attach(function(client, bufnr)
-                local opts = { noremap = true, silent = true }
-                -- Default keybinding for LSP definitions (can be customized)
-                vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>', opts)  -- Go to definition
-                vim.api.nvim_buf_set_keymap(bufnr, 'n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>', opts)        -- Hover action
-                -- You can add more key mappings for LSP here as needed
+                    local opts = { buffer = bufnr, silent = true }
+
+                    vim.keymap.set('n', 'gd', vim.lsp.buf.definition, opts)
+                    vim.keymap.set('n', 'K', vim.lsp.buf.hover, opts)
             end)
 
-            -- Finalize LSP setup
             lsp.setup()
         end,
     },

@@ -26,3 +26,4 @@ alias d="docker"
 
 alias forum="~/tmux_forum.sh"
 alias ia="ssh bob@192.178.10.2"
+alias dex="~/tmux_dex.sh"
