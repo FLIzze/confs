@@ -22,5 +22,8 @@ return {
         -- Accept changes from the right side (other branch)
         vim.api.nvim_set_keymap('n', '<Leader>gl', ':diffget //3<CR>', { noremap = true, silent = true })  -- Accept right side (other branch)
         vim.api.nvim_set_keymap('n', '<Leader>gr', ':Git reset --hard HEAD~1<CR>', { noremap = true, silent = true })  -- Hard revert
+
+        vim.api.nvim_set_keymap('n', '<Leader>gm', ':diffget //2<CR>:diffget //3<CR>', { noremap = true, silent = true })
+
     end
 }
