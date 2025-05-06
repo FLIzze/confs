@@ -59,8 +59,6 @@ return {
             lsp.on_attach(function(client, bufnr)
                     local opts = { buffer = bufnr, silent = true }
 
-                    vim.keymap.set('n', 'ld', vim.lsp.buf.definition, opts)
-                    vim.keymap.set('n', 'lh', vim.lsp.buf.hover, opts)
                     vim.keymap.set('n', "<leader>lf", vim.lsp.buf.format)
             end)
 
